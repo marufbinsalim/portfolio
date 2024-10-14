@@ -12,7 +12,7 @@ import Projects from "@/sections/Projects";
 import Experience from "@/sections/Experience";
 
 function Index() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [showContent, setShowContent] = useState(false);
 
   const handleLoaderLoaded = () => {
