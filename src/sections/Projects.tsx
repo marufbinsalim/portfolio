@@ -103,7 +103,6 @@ function Projects() {
                 }}
               >
                 <div className="project-image">
-                  <div className="project-image-overlay"></div>
                   <div className="project-image-container">
                     <Image src={image} fill alt={projectName} quality={100} />
                   </div>
@@ -142,7 +141,7 @@ function Projects() {
                 </div>
               </motion.div>
             );
-          }
+          },
         )}
       </div>
     </div>

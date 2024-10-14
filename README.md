@@ -66,11 +66,5 @@ In addition to their hosting services, Kinsta provides top-notch customer suppor
 
 With its high-performance hosting solutions, robust security measures, and exceptional customer support, Kinsta is a trusted choice for businesses looking for reliable and scalable hosting solutions for their applications and databases.
 
-Use the links below to get $20 worth of credits to get started.
-
-[Kinsta Application Hosting](https://kinsta.com/application-hosting/?utm_source=kishan&utm_medium=digital&utm_campaign=application-hosting&utm_content=blog)
-
-[Kinsta Database Hosting](https://kinsta.com/database-hosting/?utm_source=kishan&utm_medium=digital&utm_campaign=database-hosting&utm_content=blog)
-
 
 ### This project was a part of my Youtube Channel. Check out the video to learn how to build this awesome portfolio from scratch and host the NEXT.JS Portfolio on Kinsta.

@@ -28,10 +28,10 @@ function About() {
       <div className="about-grid">
         <div className="about-grid-info">
           <p className="about-grid-info-text">
-            Bonjour! My name is Kishan, and I am passionate about creating
-            digital content for the web. My interest in web development was
-            sparked in 2016 when I created my first project called Lavish, a
-            social media app built using React and Node.js.
+            Hola! My name is Maruf, and I am passionate about creating digital
+            content for the web. My interest in web development was sparked in
+            2016 when I created my first project called Lavish, a social media
+            app built using React and Node.js.
           </p>
           <p className="about-grid-info-text">
             Fast-forward to today, I specialize in designing and developing

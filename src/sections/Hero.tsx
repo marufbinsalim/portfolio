@@ -27,7 +27,7 @@ function Hero() {
           delay: 0.75,
         }}
       >
-        Kishan Sheth.
+        Maruf.
       </motion.h2>
       <motion.h3
         className="hero-title-large hero-title-sub"

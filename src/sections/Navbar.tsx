@@ -20,7 +20,7 @@ function Navbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.pageYOffset > 100
+      window.pageYOffset > 700
         ? setNavbarVisible(true)
         : setNavbarVisible(false);
     });
@@ -58,7 +58,7 @@ function Navbar() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            duration: 0.3,
+            duration: 0,
             ease: "easeInOut",
           }}
         >
