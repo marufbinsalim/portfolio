@@ -1,10 +1,12 @@
+// @ts-nocheck
+import { color } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-function Projects() {
+const Projects = () => {
   const projectsData = [
     {
       image: "/project1.png",
@@ -64,8 +66,97 @@ function Projects() {
       },
     },
   ];
+
+  const containerStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    margin: "0 0",
+    padding: "0px",
+    maxWidth: "min(1600px, 80vw)",
+    width: "max-content",
+    gap: "40px",
+  };
+
+  const cardStyle = {
+    border: "1px solid var(--text)",
+    borderRadius: "10px",
+    overflow: "hidden",
+    width: "400px",
+    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+    transition: "transform 0.2s",
+    color: "var(--text)",
+    backgroundColor: "var(--background-color)",
+    padding: "20px",
+    display: "flex",
+    flexDirection: "column",
+  };
+
+  const imageStyle = {
+    width: "100%",
+    height: "200px",
+    objectFit: "cover",
+  };
+
+  const contentStyle = {
+    margin: "20px 0",
+  };
+
+  const titleStyle = {
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginBottom: "10px",
+    color: "var(--light-text)",
+  };
+
+  const descriptionStyle = {
+    fontSize: "1rem",
+    marginBottom: "15px",
+  };
+
+  const techListStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    listStyleType: "none",
+    padding: 0,
+  };
+
+  const techItemStyle = {
+    backgroundColor: "var(--background-color)",
+    border: "1px solid var(--text)",
+    padding: "5px 10px",
+    borderRadius: "5px",
+    margin: "5px",
+    fontSize: "0.9rem",
+  };
+
+  const linkStyle = {
+    color: "var(--text)",
+    textDecoration: "none",
+    fontSize: "1rem",
+    fontWeight: "bold",
+  };
+
+  const LinkContainerStyle = {
+    display: "flex",
+    color: "var(--text)",
+    gap: "10px",
+    marginTop: "auto",
+    paddingTop: "20px",
+  };
+
   return (
-    <div className="projects" id="work">
+    <motion.div
+      className="projects"
+      id="work"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      variants={{
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 },
+      }}
+    >
       <motion.div
         className="title"
         initial="hidden"
@@ -79,73 +170,46 @@ function Projects() {
       >
         <h2>Some Things I’ve Built</h2>
       </motion.div>
-      <div className="projects-container">
-        {projectsData.map(
-          ({
-            image,
-            projectDescription,
-            projectLink,
-            projectExternalLinks,
-            projectName,
-            projectTech,
-          }) => {
-            return (
-              <motion.div
-                className="project"
-                key={projectName}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                variants={{
-                  visible: { opacity: 1, y: -50 },
-                  hidden: { opacity: 0, y: 0 },
-                }}
+      <div style={containerStyle}>
+        {projectsData.map((project, index) => (
+          <div key={index} style={cardStyle}>
+            <Image
+              width={300}
+              height={200}
+              src={project.image}
+              alt={project.projectName}
+              style={imageStyle}
+            />
+            <div style={contentStyle}>
+              <h3 style={titleStyle}>{project.projectName}</h3>
+              <p style={descriptionStyle}>{project.projectDescription}</p>
+              <ul style={techListStyle}>
+                {project.projectTech.map((tech, i) => (
+                  <li key={i} style={techItemStyle}>
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div style={LinkContainerStyle}>
+              <Link
+                href={project.projectExternalLinks.github}
+                style={linkStyle}
               >
-                <div className="project-image">
-                  <div className="project-image-container">
-                    <Image src={image} fill alt={projectName} quality={100} />
-                  </div>
-                </div>
-                <div className="project-info">
-                  <p className="project-info-overline">Featured Project</p>
-                  <h3 className="project-info-title">{projectName}</h3>
-                  <div className="project-info-description">
-                    <p>{projectDescription}</p>
-                  </div>
-                  <ul className="project-info-tech-list">
-                    {projectTech.map((tech) => (
-                      <li className="project-info-tech-list-item" key={tech}>
-                        {tech}
-                      </li>
-                    ))}
-                  </ul>
-                  <ul className="project-info-links">
-                    <li className="project-info-links-item">
-                      <Link
-                        href={projectExternalLinks.github}
-                        className="project-info-links-item-link"
-                      >
-                        <FiGithub />
-                      </Link>
-                    </li>
-                    <li className="project-info-links-item">
-                      <Link
-                        href={projectExternalLinks.externalLink}
-                        className="project-info-links-item-link"
-                      >
-                        <FiExternalLink />
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </motion.div>
-            );
-          },
-        )}
+                <FiGithub size={30} />
+              </Link>
+              <Link
+                href={project.projectExternalLinks.externalLink}
+                style={linkStyle}
+              >
+                <FiExternalLink size={30} />
+              </Link>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
+    </motion.div>
   );
-}
+};
 
 export default Projects;

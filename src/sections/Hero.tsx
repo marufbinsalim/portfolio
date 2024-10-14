@@ -68,7 +68,7 @@ function Hero() {
           delay: 1.65,
         }}
       >
-        <Button text="Get in touch with me!" link="1" />
+        <Button text="Get my details" link="/resume.pdf" />
       </motion.div>
     </div>
   );

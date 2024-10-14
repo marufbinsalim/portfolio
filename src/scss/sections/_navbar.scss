@@ -43,7 +43,7 @@ nav {
         .nav-items {
             display: flex;
             gap: 3em;
-            color: var(--lightest-slate);
+            color: var(--lightest-text);
             font-family: var(--fira-code);
             font-weight: 500;
             font-size: var(--tsm1);
@@ -91,7 +91,7 @@ nav {
                 visibility: hidden;
                 top: 0;
                 padding: 50px 10px;
-                background-color: var(--light-navy);
+                background-color: var(--background-color);
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -106,6 +106,8 @@ nav {
                 width: min(75vw, 400px);
                 visibility: visible;
                 opacity: 1;
+                background-color: var(--background-color);
+                border-left: 1px solid var(--theme-color);
             }
         }
     }

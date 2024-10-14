@@ -14,63 +14,28 @@ function Experience() {
 
   const expereinces = [
     {
-      name: "Rapidops",
-      role: "Full Stack Developer",
-      url: "https://www.rapidops.com",
-      start: "January 2021",
+      name: "Kiuub",
+      role: "Full Stack Developer, externe (remote)",
+      url: "https://www.youtube.com/channel/UCqkh6vbMkhFbCJmQ_42KWew",
+      start: "January 2022",
+      end: "March 2023",
+      shortDescription: [
+        "Worked alongside a team of developers, designers, and project managers to create and maintain web applications for clients.",
+        "Core tech stack was weweb, vue and nextjs, with postgresql as the database.",
+        "Implement Authentication & Stripe Integration for client projects",
+        "Develop postgresql queries and views",
+      ],
+    },
+    {
+      name: "Fiverr",
+      role: "Freelance Web Developer",
+      url: "https://www.fiverr.com/xxxxx",
+      start: "March 2021",
       end: "Present",
       shortDescription: [
-        "I had experience working on a large codebase utilizing Kibana and Elasticsearch.",
-        "Throughout my work, I've utilized various MERN stack technologies, including React, Redux, TypeScript, Node.js, Hapi, and Elasticsearch, among others.",
-        "I've also managed a small team that includes Frontend Developers, Backend Developers, and UI/UX Developers.",
-        "Additionally, I've represented the company in client meetings, communicating effectively on their behalf.",
-      ],
-    },
-    {
-      name: "Youtube",
-      role: "Content Creator",
-      url: "https://www.youtube.com/kishansheth21",
-      start: "April 2021",
-      end: "Present",
-      shortDescription: [
-        "Upon graduating in 2021, I began creating content on YouTube, with the aim of enhancing my skills and working with the latest technologies, specifically React and Node.",
-        "Over time, I have developed and shared over 50 projects using React on my channel.",
-        "As a result, my channel has gained a substantial following, with over 11,000 subscribers to date. I have also had the pleasure of collaborating with various brands throughout my journey.",
-      ],
-    },
-    {
-      name: "ACES",
-      role: "President",
-      url: "https://www.linkedin.com/company/association-of-computer-engineering-students/",
-      start: "November 2019",
-      end: "November 2020",
-      shortDescription: [
-        "As the elected President of the ACES Departmental Club, I successfully led a team of board members and executive committee members to organize and execute multiple events throughout the year.",
-        "Additionally, I secured sponsorships from reputable brands to support our events.",
-        "Overall, it was a rewarding experience that allowed me to develop my leadership skills while contributing positively to the growth of the organization.",
-      ],
-    },
-    {
-      name: "ISTE",
-      role: "Web Developer",
-      url: "https://www.linkedin.com/company/association-of-computer-engineering-students/",
-      start: "November 2019",
-      end: "November 2020",
-      shortDescription: [
-        "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-        "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-        "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis",
-      ],
-    },
-    {
-      name: "Shashaan",
-      role: "Founder",
-      url: "https://www.linkedin.com/company/association-of-computer-engineering-students/",
-      start: "November 2018",
-      end: "November 2021",
-      shortDescription: [
-        "While still a student, I founded a web hosting company that offered affordable hosting services.",
-        "With over 300 customers, the business thrived until I graduated and sold it to another company.",
+        "Developed and maintained web applications for clients.",
+        "Handled client communication, project management, and development.",
+        "Core tech stack was react, node, nextjs, with a variety of database and cloud services / api.",
       ],
     },
   ];
@@ -127,7 +92,7 @@ function Experience() {
                   <li key={index} className="exp-details-list-item">
                     {description}
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>
