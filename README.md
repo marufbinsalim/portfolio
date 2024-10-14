@@ -1,40 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The following technologies were used to create this portfolio:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js
+- React
+- Typescript
+- SCSS
+- Framer Motion
+- Kinsta
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🛠 Installation & Set Up
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+1. Install dependencies
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   yarn
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Start the development server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```sh
+   yarn dev
+   ```
 
-## Deploy on Vercel
+## 🚀 Building and Running for Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Generate a full static production build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```sh
+   yarn build
+   ```
+
+1. Preview the site as it will appear once deployed
+
+   ```sh
+   yarn start
+   ```
+
+
+## 🎨 Color Reference
+
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Navy           | `#0a192f` |
+| Light Navy     | `#112240` |
+| Lightest Navy  | `#233554` |
+| Slate          | `#8892b0` |
+| Light Slate    | `#a8b2d1` |
+| Lightest Slate | `#ccd6f6` |
+| White          | `#e6f1ff` |
+| Purple         | `#9d00ff` |
+
+
+
+## 🚀 Deployment on Kinsta:
+
+Kinsta is a leading cloud hosting provider that specializes in offering high-performance hosting solutions for applications and databases. With a global network of data centers, Kinsta provides reliable and scalable hosting services to businesses of all sizes, from startups to enterprises.
+
+In addition to their hosting services, Kinsta provides top-notch customer support with a team of WordPress and hosting experts available 24/7 to assist customers with any questions or issues they may encounter.
+
+With its high-performance hosting solutions, robust security measures, and exceptional customer support, Kinsta is a trusted choice for businesses looking for reliable and scalable hosting solutions for their applications and databases.
+
+Use the links below to get $20 worth of credits to get started.
+
+[Kinsta Application Hosting](https://kinsta.com/application-hosting/?utm_source=kishan&utm_medium=digital&utm_campaign=application-hosting&utm_content=blog)
+
+[Kinsta Database Hosting](https://kinsta.com/database-hosting/?utm_source=kishan&utm_medium=digital&utm_campaign=database-hosting&utm_content=blog)
+
+
+### This project was a part of my Youtube Channel. Check out the video to learn how to build this awesome portfolio from scratch and host the NEXT.JS Portfolio on Kinsta.
