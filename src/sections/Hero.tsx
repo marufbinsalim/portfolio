@@ -68,10 +68,7 @@ function Hero() {
           delay: 1.65,
         }}
       >
-        <Button
-          text="Check out my course"
-          link="https://youtube.com/kishansheth21"
-        />
+        <Button text="Get in touch with me!" link="1" />
       </motion.div>
     </div>
   );
