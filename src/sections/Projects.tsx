@@ -10,59 +10,45 @@ const Projects = () => {
   const projectsData = [
     {
       image: "/project1.png",
-      projectName: "Pokedex",
-      projectLink: "https://netlify.com",
+      projectName: "Chattypals",
+      projectLink: "https://chattypals.vercel.app",
       projectDescription:
-        "This is a web application that uses the PokeAPI to display information about different Pokemon, including their evolution levels and details. You can compare multiple Pokemon using a queue, and add them to your personal list using Firebase's Firestore database.",
-      projectTech: [
-        "React",
-        "Redux Toolkit",
-        "SCSS",
-        "Firebase",
-        "Typescript",
-        "PokeApi",
-      ],
+        "This is a web application that uses clerk for authentication and supabase for real-time crud. It has a chat feature with emoji support and a profile page, sharing profile featre. It is made with Next.js and Typescript.",
+      projectTech: ["React", "tailwindcss", "supabase", "Typescript", "Clerk"],
       projectExternalLinks: {
-        github: "",
-        externalLink: "",
+        github: "https://github.com/marufbinsalim/chatty",
+        externalLink: "https://chattypals.vercel.app/",
       },
     },
     {
       image: "/project2.png",
-      projectName: "Realtime Chat App",
-      projectLink: "https://netlify.com",
+      projectName: "Eventsync",
+      projectLink: "https://events-sync.vercel.app/",
       projectDescription:
-        "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React. It has 300+ stars on GitHub and over 180k views on YouTube.",
+        "It's a web application that lets you create events and users can rsvp to the event. It has a calendar view and a list view with filtering feature, pagination. It is made with Next.js and supabase.",
       projectTech: [
         "React",
-        "Sockets",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Styled Components",
+        "Next.js",
+        "supabase",
+        "redux-toolkit",
+        "react-query",
+        "tailwindcss",
       ],
       projectExternalLinks: {
-        github: "",
-        externalLink: "",
+        github: "https://github.com/marufbinsalim/EventSync",
+        externalLink: "https://events-sync.vercel.app/",
       },
     },
     {
       image: "/project3.png",
-      projectName: "Netflix App",
-      projectLink: "https://netlify.com",
+      projectName: "Catalystars",
+      projectLink: "https://www.catalystars.com/",
       projectDescription:
-        "I made a Netflix copy with TMBD Api. It has infinite scrolling and lets you watch movies by genre. You can also add movies to your favorites list.",
-      projectTech: [
-        "React",
-        "Node.js",
-        "Firebase",
-        "MongoDB",
-        "Express",
-        "Redux Toolkit",
-      ],
+        "It's a landing page for a company that provides services for startups. It is made with Next.js and tailwindcss.",
+      projectTech: ["React", "EmailJS", "Next.js", "tailwindcss"],
       projectExternalLinks: {
-        github: "",
-        externalLink: "",
+        github: "https://github.com/marufbinsalim/catalystars",
+        externalLink: "https://www.catalystars.com/",
       },
     },
   ];
@@ -193,12 +179,14 @@ const Projects = () => {
             </div>
             <div style={LinkContainerStyle}>
               <Link
+                target="_blank"
                 href={project.projectExternalLinks.github}
                 style={linkStyle}
               >
                 <FiGithub size={30} />
               </Link>
               <Link
+                target="_blank"
                 href={project.projectExternalLinks.externalLink}
                 style={linkStyle}
               >
