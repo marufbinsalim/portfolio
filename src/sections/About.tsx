@@ -30,47 +30,43 @@ function About() {
           <p className="about-grid-info-text">
             Hola! My name is Maruf, and I am passionate about creating digital
             content for the web. My interest in web development was sparked in
-            2016 when I created my first project called Lavish, a social media
-            app built using React and Node.js.
+            2018 when I started my undergraduate studies in Computer Science at
+            North South University.
           </p>
           <p className="about-grid-info-text">
-            Fast-forward to today, I specialize in designing and developing
-            high-quality solutions that delight our clients and exceed their
-            expectations at{" "}
-            <Link href="https://rapidops.com" className="link" target="_blank">
-              Rapidops.
+            After working as a freelance web developer for 2 years, I started
+            working as a full-time software engineer at{" "}
+            <Link
+              href="https://www.youtube.com/channel/UCqkh6vbMkhFbCJmQ_42KWew"
+              className="link"
+              target="_blank"
+            >
+              Kiuub Studio
             </Link>
+            , where I developed and maintained web applications for clients.
           </p>
 
           <p className="about-grid-info-text">
-            Additionally, I share my knowledge and passion with the world
-            through my YouTube channel, where I demonstrate how to build
-            full-stack applications.
+            Fast-forward to today, I specialize in designing and developing
+            high-quality solutions that delight clients and exceed their
+            expectations as a full-stack developer at fiverr.
           </p>
-          <p className="about-grid-info-text">
-            I am also working on a new project called&nbsp;
-            <Link
-              className="link"
-              target="_blank"
-              href="https://frontendvita.com"
-            >
-              FrontendVita,
-            </Link>
-            &nbsp;aimed at enhancing frontend development skills.
-          </p>
+
           <p className="about-grid-info-text">
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul className="about-grid-info-list">
             <li className="about-grid-info-list-item">React</li>
-            <li className="about-grid-info-list-item">React Native</li>
             <li className="about-grid-info-list-item">Next.js</li>
             <li className="about-grid-info-list-item">Typescript</li>
             <li className="about-grid-info-list-item">Redux Toolkit</li>
             <li className="about-grid-info-list-item">Node.js</li>
-            <li className="about-grid-info-list-item">Elasticsearch</li>
-            <li className="about-grid-info-list-item">Kibana</li>
-            <li className="about-grid-info-list-item">CSS</li>
+            <li className="about-grid-info-list-item">Clerk</li>
+            <li className="about-grid-info-list-item">Deno</li>
+            <li className="about-grid-info-list-item">CSS, tailwindcss</li>
+            <li className="about-grid-info-list-item">
+              Supabase, Firebase, postgreSQL
+            </li>
           </ul>
         </div>
         <div className="about-grid-photo">
